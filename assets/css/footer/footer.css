@@ -51,7 +51,9 @@ legend {
   transition: 0.3s;
 }
 .footer-contact-form .btn-form:hover {
-  border-color: #0e0775;
+  border-color: var(--color-secondary-paragraph);
+  background: var(--color-primary);
+  color: var(--color-secondary-paragraph);
 }
 #copy {
   display: flex;
