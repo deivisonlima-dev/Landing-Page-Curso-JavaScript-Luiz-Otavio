@@ -1,0 +1,105 @@
+.menu-bg {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: var(--color-primary);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.menu img {
+  width: 100px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.menu .menu-nav {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem 0;
+}
+
+.menu .menu-nav a {
+  padding: 1rem 0;
+  position: relative;
+  letter-spacing: 2px;
+}
+.menu .menu-nav a::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: var(--color-secondary-paragraph);
+  position: absolute;
+  top: 3.3rem;
+  transition: 0.3s;
+}
+.menu .menu-nav a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .menu .menu-nav {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-secondary-paragraph);
+    /* padding: 20px; */
+    position: absolute;
+    top: 52.74px;
+    right: 0px;
+    height: 100vh;
+    width: 0px;
+    z-index: 5000;
+    overflow-x: hidden;
+    visibility: hidden;
+    transition: 0.6s;
+  }
+  .menu .menu-nav li {
+    padding: 0px 20px;
+  }
+  .menu-nav.activate {
+    width: 70%;
+    visibility: visible;
+    overflow-x: auto;
+  }
+  .menu-nav.activate a {
+    padding: 1.6rem 0px;
+    color: var(--color-primary);
+  }
+  .menu-nav.activate a:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .menu .menu-nav a::before {
+    background: var(--color-primary);
+  }
+  .menu .menu-nav a:hover::before {
+    width: 100%;
+    top: 4rem;
+  }
+  .btn-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .btn-mobile div {
+    width: 4rem;
+    height: 0.3rem;
+    background: var(--color-secondary-paragraph);
+    border-radius: 1.5rem;
+    transition: 0.3s;
+  }
+
+  #btnMobile.activate div:nth-child(1) {
+    display: none;
+  }
+  #btnMobile.activate div:nth-child(2) {
+    transform: rotate(135deg);
+  }
+  #btnMobile.activate div:nth-child(3) {
+    transform: rotate(-135deg);
+    position: absolute;
+  }
+}

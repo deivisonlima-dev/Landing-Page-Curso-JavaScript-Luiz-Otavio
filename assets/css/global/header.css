@@ -1,0 +1,32 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+.header-content h1 {
+    max-width: 13ch;
+    margin-bottom: 4rem;
+}
+.header-content p {
+    max-width: 35ch;
+}
+.header-img img{
+    align-self: center;
+    /* object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center; */
+}
+@media (max-width: 800px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+    .header-content h1 {
+        max-width: max-content;
+       font-size: 4rem;
+    }
+    .header-content p {
+        max-width: max-content;
+    }
+}

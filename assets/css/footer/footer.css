@@ -1,0 +1,106 @@
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-contact h2,
+.footer-contact p {
+  margin-bottom: 5rem;
+}
+.footer-contact-form {
+  display: flex;
+}
+.footer-contact-form form {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.footer-contact-form input::placeholder {
+  font-size: 2.3rem;
+}
+.footer-contact-form input {
+  width: 100%;
+  padding: 2rem;
+}
+#form div label {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+legend {
+  grid-column: 1/-1;
+}
+.footer-contact-form #email-1 {
+  grid-column: 1/-1;
+}
+
+.footer-contact-form #message-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+}
+.footer-contact-form .btn-form {
+  grid-column: 1/-1;
+  max-width: max-content;
+  background: none;
+  color: var(--color-primary);
+  border: 5px solid var(--color-primary);
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-contact-form .btn-form:hover {
+  border-color: #0e0775;
+}
+#copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copy p img {
+  width: 2rem;
+  display: inline;
+}
+#copy a span {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+#copy a img {
+  width: 4rem;
+}
+#copy a span:hover {
+  border: 1px solid #ffffffca;
+  background: #a5a5a5;
+}
+
+#back-top {
+  display: flex;
+  position: fixed;
+  font-size: 4rem;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .footer-contact,
+  .footer-contact-form form {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #copy a span {
+    display: none;
+  }
+  #copy p {
+    padding: 50px 0px;
+  }
+}

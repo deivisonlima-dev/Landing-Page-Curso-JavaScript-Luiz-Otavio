@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #111111;
+    --color-primary-title: #ffffff;
+    --color-primary-paragraph: #f3f3f3;
+    --color-secondary-title: #0A1128;
+    --color-secondary-paragraph: #0f193a;  
+    --color-mobile: #0f193afa;  
+}
+
+.cor-1{
+    color: var(--color-primary);
+}
+.cor-2{
+    color: var(--color-secondary);
+}
+
+.cor-p-t1 {
+    color: var(--color-primary-title);
+}
+.cor-p-p1 {
+    color: var(--color-primary-paragraph);
+}
+.cor-s-t1 {
+    color: var(--color-secondary-title);
+}
+.cor-s-p1 {
+    color: var(--color-secondary-paragraph);
+}

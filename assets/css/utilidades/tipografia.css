@@ -1,0 +1,77 @@
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+}
+
+/* Font primary */
+
+.font-1-m-b {
+  font: 400 1.5rem/1.5 var(--font-primary);
+}
+.font-1-m {
+  font: 400 2.3rem/1.5 var(--font-primary);
+}
+.font-1-l {
+  font: 600 3rem/1.5 var(--font-primary);
+}
+.font-1-ll {
+  font: 600 3rem/1.5 var(--font-secondary);
+}
+
+.font-1-xl {
+  font: 600 6rem/1.5 var(--font-primary);
+  text-transform: uppercase;
+}
+.font-1-xxl {
+  font: 600 8rem/1.125 var(--font-primary);
+}
+
+/* Font secondary */
+.font-2-m {
+  font: 500 1.125rem/1.5 var(--font-secondary);
+}
+.font-2-ms {
+  font: 500 1rem/1.5 var(--font-secondary);
+}
+.font-2-xs {
+  font: 400 0.875rem/1.35 var(--font-secondary);
+}
+.font-2-s {
+  font: 400 1rem/1.5 var(--font-secondary);
+}
+.font-2-l-b {
+  font: 500 1.5rem/1.5 var(--font-secondary);
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+.font-2-l {
+  font: 400 1.5rem/1.5 var(--font-secondary);
+}
+.font-2-xl {
+  font: 500 2rem/1.25 var(--font-secondary);
+}
+
+/* Responsividade fontes */
+@media (max-width: 1200px) {
+  .font-1-xl {
+    font-size: 5rem;
+  }
+  .font-1-m {
+    font: 400 2rem/1.5 var(--font-primary);
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xl {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-1-xl {
+    font-size: 4rem;
+  }
+  .font-1-m {
+    font: 400 1.8rem/1.5 var(--font-primary);
+  }
+}
