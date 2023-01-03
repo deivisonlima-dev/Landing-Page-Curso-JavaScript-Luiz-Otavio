@@ -40,6 +40,7 @@ textarea {
 .container-white-bg {
   background: var(--color-primary-title);
   padding: 8rem 0;
+  min-height: 100vh;
 }
 .container-background {
   background: url("../img/main-bg.svg");
@@ -47,4 +48,6 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8rem 0;
+  min-height: 100vh;
 }
+

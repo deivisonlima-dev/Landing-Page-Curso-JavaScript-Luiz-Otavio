@@ -60,6 +60,11 @@ legend {
   justify-content: center;
   align-items: center;
 }
+#copy p {
+  background: var(--color-primary-title);
+  padding: 8rem 0;
+}
+
 #copy p img {
   width: 2rem;
   display: inline;
@@ -99,6 +104,12 @@ legend {
   }
 }
 @media (max-width: 600px) {
+  .footer-contact-info p {
+    margin-bottom: 0;
+  }
+  .footer-img  {
+    margin-bottom: 5rem;
+  }
   #copy a span {
     display: none;
   }

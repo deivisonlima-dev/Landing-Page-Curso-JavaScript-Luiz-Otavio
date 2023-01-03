@@ -9,9 +9,9 @@
   transform: translate3d(-50px, 0, 0);
 }
 
-/* [data-animation="right"] {
+[data-animation="right"] {
   transform: translate3d(50px, 0, 0);
-} */
+}
 
 [data-animation].animate {
   opacity: 1;
